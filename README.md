@@ -1,4 +1,5 @@
 # Vaja7-PWM-STM32F4
+Pri auto generirani kodi je funkcija MX_I2S3_Init(); zaustavila program, zato je tudi ta del kode komentiran, če spreminjaš pinout ali nastavitve za pine se bo ta del kode odkomentiral in ga je ponovno treba odstraniti da bo naloga delovala.
  Zaženite STM32CubeIDE in ustvarite nov STM32 projekt (pod zavihkom information Center). V zavihku Board selector s pomočjo filtrov Vendor, Type in MCU/MPU Series izberite ustrezno razvojno ploščo (v našem primeru STM32F401C-Discovery), kliknite Next, projekt poimenujte vaja7_PWM in kliknite Finish (na možnosti opcije za prenastavitev periferije izberite Yes, izbrana naj bo tudi opcija perspektive za STM32CubeMX).
 V levem Pinout oknu razširite nabor možnosti za Timers ter za časovnik TIM1. Clock Source nastavite kot Internal Clock. Prvi kanal aktivirajte kot PWM Generation CH1. Kateri pin ste omogočili? ___PE9___. Kaj se izpiše poleg pina? ___TIM1_CH1___.
  V Clock Configuration spremenimo takt časovnika APB1 Timer Clocks (MHz) na 16 MHz.
